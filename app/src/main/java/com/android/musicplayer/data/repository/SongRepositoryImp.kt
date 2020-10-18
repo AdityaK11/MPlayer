@@ -7,11 +7,11 @@ import com.android.musicplayer.domain.repository.SongRepository
 class SongRepositoryImp(private val appDatabase: AppDatabase) : SongRepository {
 
     override fun delete(song: Song) {
-        appDatabase.songDao.delete(song)
+        appDatabase.songDao.delete(song)        // deleting the song
     }
 
     override fun getSongs(playlistId:Int): List<Song>? {
-        return appDatabase.songDao.loadAll(playlistId)
+        return appDatabase.songDao.loadAll(playlistId)      // loading and accessing the songs
     }
 
     override fun saveSongData(song: Song):Long {

@@ -8,7 +8,7 @@ import com.android.musicplayer.presentation.songlist.SonglistViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
-val AppModule = module {
+val AppModule = module {            // abstraction of the app module wise
 
     viewModel { SonglistViewModel(get(), get(), get()) }
 

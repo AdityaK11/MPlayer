@@ -9,7 +9,7 @@ import kotlinx.android.parcel.Parcelize
 @Suppress("DIFFERENT_NAMES_FOR_THE_SAME_PARAMETER_IN_SUPERTYPES")
 @Entity
 @Parcelize
-data class Song(
+data class Song(            // structure of Song Class what will the song display
     @PrimaryKey var id: Int,
     var songName: String?,
     var path: String,
