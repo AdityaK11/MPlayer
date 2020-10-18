@@ -4,7 +4,7 @@ import androidx.room.*
 import com.android.musicplayer.data.model.Playlist
 
 @Dao
-interface PlaylistDao {
+interface PlaylistDao {                     // This is the section where we can access the data from database
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(playlist: Playlist): Long
 

@@ -5,10 +5,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.android.parcel.Parcelize
 
-@Suppress("DIFFERENT_NAMES_FOR_THE_SAME_PARAMETER_IN_SUPERTYPES")
+@Suppress("DIFFERENT_NAMES_FOR_THE_SAME_PARAMETER_IN_SUPERTYPES") // warnings supressed
 @Entity
 @Parcelize
-data class Playlist(
+data class Playlist(            // Structure of Playlist section in the App
     var playlistName: String?,
     var albumArt: String?
 ) : Parcelable{
